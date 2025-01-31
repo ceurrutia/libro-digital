@@ -33,4 +33,11 @@ button{
   border-bottom: 2px #007bc7 solid;
 }
 
+.download-link{
+  margin: 5px 0 5px 0;
+}
+
+.container{
+  margin-bottom: 30px;
+}
 

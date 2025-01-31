@@ -112,13 +112,26 @@
                 console.error("Error cargando bloque soporte:", error)
               );
           </script>
+
+          <div class="row-servicios">
+            <h5>Descargas </h5>
+
+          <div id="instructivos"></div>
+          <script>
+            fetch("Instructivos.html")
+              .then((response) => response.text())
+              .then((html) => {
+                document.getElementById("instructivos").innerHTML = html;
+              })
+              .catch((error) =>
+                console.error("Error cargando bloque instructivos:", error)
+              );
+          </script>
         
         
       </div>
     </div>
   </div>
-
-    <hr />
 
     <div id="footer"></div>
     <script>
