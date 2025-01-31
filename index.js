@@ -1,19 +1,30 @@
 const express = require('express');
-const path = require('path')
+const path = require('path');
 
-const app = express()
+const app = express();
 const PORT = 3000;
 
-app.use(express.static('public'));
 
+app.use(express.static(path.join(__dirname, 'public')));
 
+// Archivos HTML
+app.get('/:file', (req, res) => {
+    const file = req.params.file;
+    const filePath = path.join(__dirname, 'public', file);
+
+    res.sendFile(filePath, (err) => {
+        if (err) {
+            res.status(404).send("Archivo no encontrado");
+        }
+    });
+});
+
+// Ruta principal
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
-
-//server
-
-app.listen(PORT, ()=>{
-    console.log(`Server listen at port ${PORT}`)
-})
+// Inicia servidor
+app.listen(PORT, () => {
+    console.log(`Server running at http://localhost:${PORT}`);
+});
