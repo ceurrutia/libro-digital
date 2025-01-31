@@ -10,8 +10,7 @@
 }
 
 .card.card-horizontal-access {
-  flex-direction: row;
-  width: 500px;
+  width: 50%;
   margin: auto;
   margin-top: 50px;
 }
