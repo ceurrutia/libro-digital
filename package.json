@@ -6,7 +6,6 @@
   "dependencies": {
     "@gcba/obelisco-v2": "^1.5.1",
     "boxicons": "^2.1.4",
-    "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "material-symbols": "^0.28.1"
   }

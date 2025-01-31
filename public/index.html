@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Libro Digital</title>
+    <title>AGC - Libro Digital</title>
 
     <!-- Obelisco cdn-->
     <link
@@ -39,7 +39,7 @@
 
       <div id="header"></div>
       <script>
-        fetch("./components/Header.html")
+        fetch("Header.html")
           .then((response) => response.text())
           .then((html) => {
             document.getElementById("header").innerHTML = html;
@@ -52,7 +52,7 @@
       <!--banner -->
 <div id="banner"></div>
 <script>
-  fetch("./components/Banner.html")
+  fetch("Banner.html")
     .then((response) => response.text())
     .then((html) => {
       document.getElementById("banner").innerHTML = html;
@@ -72,7 +72,7 @@
 
   <div id="acceso"></div>
           <script>
-            fetch("./components/Access.html")
+            fetch("Access.html")
               .then((response) => response.text())
               .then((html) => {
                 document.getElementById("acceso").innerHTML = html;
@@ -91,7 +91,7 @@
         
           <div id="cards-h"></div>
           <script>
-            fetch("./components/CardsHorizontal.html")
+            fetch("CardsHorizontal.html")
               .then((response) => response.text())
               .then((html) => {
                 document.getElementById("cards-h").innerHTML = html;
@@ -103,7 +103,7 @@
           <!--Bloque soporte -->
           <div id="soporte"></div>
           <script>
-            fetch("./components/BloqueSoporte.html")
+            fetch("BloqueSoporte.html")
               .then((response) => response.text())
               .then((html) => {
                 document.getElementById("soporte").innerHTML = html;
@@ -122,7 +122,7 @@
 
     <div id="footer"></div>
     <script>
-      fetch("./components/Footer.html")
+      fetch("Footer.html")
         .then((response) => response.text())
         .then((html) => {
           document.getElementById("footer").innerHTML = html;
@@ -130,7 +130,7 @@
         .catch((error) => console.error("Error cargando el footer:", error));
     </script>
 
-    <!-- JS Componentes -->
+    <!-- JS Componentes Obelisco 2-->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
