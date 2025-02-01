@@ -26,95 +26,86 @@
 
     <!-- Symbols -->
 
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0" rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0"
+      rel="stylesheet"
+    />
 
     <!--Boxicons-->
 
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    />
   </head>
   <body>
-
-
     <!-- Header-->
 
-      <div id="header"></div>
-      <script>
-        fetch("Header.html")
-          .then((response) => response.text())
-          .then((html) => {
-            document.getElementById("header").innerHTML = html;
-          })
-          .catch((error) =>
-            console.error("Error cargando header:", error)
-          );
-      </script>
+    <div id="header"></div>
+    <script>
+      fetch("Header.html")
+        .then((response) => response.text())
+        .then((html) => {
+          document.getElementById("header").innerHTML = html;
+        })
+        .catch((error) => console.error("Error cargando header:", error));
+    </script>
 
-      <!--banner -->
-<div id="banner"></div>
-<script>
-  fetch("Banner.html")
-    .then((response) => response.text())
-    .then((html) => {
-      document.getElementById("banner").innerHTML = html;
-    })
-    .catch((error) =>
-      console.error("Error cargando banner", error)
-    );
-</script>
+    <!--banner -->
+    <div id="banner"></div>
+    <script>
+      fetch("Banner.html")
+        .then((response) => response.text())
+        .then((html) => {
+          document.getElementById("banner").innerHTML = html;
+        })
+        .catch((error) => console.error("Error cargando banner", error));
+    </script>
 
+    <div class="container">
+      <!-- Bloque de acceso con clave ciudad -->
 
-      
-<div class="container">
+      <div class="row">
+        <div id="acceso"></div>
+        <script>
+          fetch("Access.html")
+            .then((response) => response.text())
+            .then((html) => {
+              document.getElementById("acceso").innerHTML = html;
+            })
+            .catch((error) => console.error("Error cargando acceso:", error));
+        </script>
+      </div>
 
-  <!-- Bloque de acceso con clave ciudad -->
-
-<div class="row">
-
-  <div id="acceso"></div>
-          <script>
-            fetch("Access.html")
-              .then((response) => response.text())
-              .then((html) => {
-                document.getElementById("acceso").innerHTML = html;
-              })
-              .catch((error) =>
-                console.error("Error cargando acceso:", error)
-              );
-          </script>
-</div>
-
-<!-- cards -->
+      <!-- cards -->
       <div class="row-servicios">
+        <h5>Otras herramientas para gestionar tu comercio</h5>
 
-        <h5> Otras herramientas para gestionar tu comercio</h5>
-     
-        
-          <div id="cards-h"></div>
-          <script>
-            fetch("CardsHorizontal.html")
-              .then((response) => response.text())
-              .then((html) => {
-                document.getElementById("cards-h").innerHTML = html;
-              })
-              .catch((error) =>
-                console.error("Error cargando tarjetas:", error)
-              );
-          </script>
-          <!--Bloque soporte -->
-          <div id="soporte"></div>
-          <script>
-            fetch("BloqueSoporte.html")
-              .then((response) => response.text())
-              .then((html) => {
-                document.getElementById("soporte").innerHTML = html;
-              })
-              .catch((error) =>
-                console.error("Error cargando bloque soporte:", error)
-              );
-          </script>
+        <div id="cards-h"></div>
+        <script>
+          fetch("CardsHorizontal.html")
+            .then((response) => response.text())
+            .then((html) => {
+              document.getElementById("cards-h").innerHTML = html;
+            })
+            .catch((error) => console.error("Error cargando tarjetas:", error));
+        </script>
+        <!--Bloque soporte -->
+        <div id="soporte"></div>
+        <script>
+          fetch("BloqueSoporte.html")
+            .then((response) => response.text())
+            .then((html) => {
+              document.getElementById("soporte").innerHTML = html;
+            })
+            .catch((error) =>
+              console.error("Error cargando bloque soporte:", error)
+            );
+        </script>
+        <!--Bloque descargas-->
 
-          <div class="row-servicios">
-            <h5>Descargas </h5>
+        <div class="row-servicios">
+          <h5>Descargas</h5>
 
           <div id="instructivos"></div>
           <script>
@@ -127,22 +118,22 @@
                 console.error("Error cargando bloque instructivos:", error)
               );
           </script>
-        
-          
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
-  <div id="redes"></div>
-  <script>
-    fetch("BloqueRedes.html")
-      .then((response) => response.text())
-      .then((html) => {
-        document.getElementById("redes").innerHTML = html;
-      })
-      .catch((error) => console.error("Error cargando el bloque redes sociales", error));
-  </script>
-
+    <!--Bloque redes sociales-->
+    <div id="redes"></div>
+    <script>
+      fetch("BloqueRedes.html")
+        .then((response) => response.text())
+        .then((html) => {
+          document.getElementById("redes").innerHTML = html;
+        })
+        .catch((error) =>
+          console.error("Error cargando el bloque redes sociales", error)
+        );
+    </script>
 
     <div id="footer"></div>
     <script>
