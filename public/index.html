@@ -123,12 +123,12 @@
     </div>
 
     <!--Bloque redes sociales-->
-    <div id="redes"></div>
+    <div id="BloqueRedes"></div>
     <script>
       fetch("BloqueRedes.html")
         .then((response) => response.text())
         .then((html) => {
-          document.getElementById("redes").innerHTML = html;
+          document.getElementById("BloqueRedes").innerHTML = html;
         })
         .catch((error) =>
           console.error("Error cargando el bloque redes sociales", error)
