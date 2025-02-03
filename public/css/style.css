@@ -44,3 +44,7 @@ button{
   grid-column: 1/12;
   margin: 0;
 }
+
+.nav-item{
+  font-size: 0.8em;
+}
