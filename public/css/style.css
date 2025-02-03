@@ -41,6 +41,6 @@ button{
 }
 
 .banner .banner-content .banner-text {
-  grid-column: 3/12;
+  grid-column: 1/12;
   margin: 0;
 }
